@@ -1,0 +1,43 @@
+<div class="pt-10">
+  <h1 class="text-center text-blue-500 text-2xl dark:text-slate-100">Projects</h1>
+  <div class="flex flex-wrap gap-2 p-9 justify-center">
+    <div class="flex flex-row flex-wrap" *ngFor="let project of projects">
+      <div
+        class="xsm:w-80 lg:w-52 border bg-white hover:shadow-md duration-150 transition cursor-pointer dark:bg-gray-800"
+      >
+        <div class="border-b-2 border-blue-500 flex justify-center">
+          <img src="{{ project.imgSource }}" alt="" class="w-52 h-52 object-cover" />
+        </div>
+        <div class="h-60 px-2 py-4 flex flex-col justify-evenly dark:text-slate-100">
+          <h1>{{ project.name }}</h1>
+          <p class="text-xs dark:text-slate-100">
+            {{ project.description }}
+          </p>
+          <div class="flex gap-2 flex-wrap dark:text-slate-100 ">
+            <div *ngFor="let tech of project.technologies">
+              <span
+                class="text-xs py-1 px-2 bg-slate-200 text-slate-700 rounded-md cursor-pointer dark:bg-slate-900 dark:text-slate-100"
+                >#{{ tech }}</span
+              >
+            </div>
+          </div>
+          <div class="py-3 gap-3 flex justify-self-start">
+            <a href="{{ project.github }}" target="_blank">
+              <fa-icon
+                [icon]="faCodeFork"
+                class="fa-sm hover:text-blue-600 transform duration-150 ease-in-out dark:text-slate-300"
+              ></fa-icon>
+            </a>
+
+            <a href="{{ project.live }}" target="_blank">
+              <fa-icon
+                [icon]="faDisplay"
+                class="fa-sm hover:text-blue-600 transform duration-150 ease-in-out dark:text-slate-300"
+              ></fa-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

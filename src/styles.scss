@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Numans&family=Paytone+One&display=swap");
+
+// font-family: 'Francois One', sans-serif;
+// font-family: 'Numans', sans-serif;
+// font-family: 'Paytone One', sans-serif;
+
+h1 {
+  font-family: "Francois One", sans-serif;
+}
+h2 {
+  font-family: "Paytone One", sans-serif;
+}
+p {
+  font-family: "Numans", sans-serif;
+}

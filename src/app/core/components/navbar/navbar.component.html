@@ -1,0 +1,54 @@
+<nav
+  class="shadow-md bg-slate-50 shadow-blue-50 flex justify-between items-center px-3 lg:px-10 dark:bg-gray-900 dark:shadow-slate-800"
+>
+  <div>
+    <img
+      src="../../../../assets/Vector.png"
+      alt=""
+      class="xsm:w-14 lg:w-20 object-contain py-4"
+    />
+  </div>
+  <div
+    class="flex justify-center items-center gap-x-7 text-gray-500 xsm:hidden lg:inline-flex px-5 dark:text-slate-300"
+  >
+    <div class="flex items-center space-x-2 cursor-pointer">
+      <fa-icon
+        [icon]="faFeather"
+        class="fa-lg hover:text-blue-500 transition duration-150"
+      ></fa-icon>
+      <p
+        class="text-sm hover:text-blue-500 transition duration-150 hover:underline"
+      >
+        Blog
+      </p>
+    </div>
+    <div class="flex items-center space-x-2 cursor-pointer">
+      <fa-icon
+        [icon]="faBriefcase"
+        class="fa-lg hover:text-blue-500 transition duration-150"
+      ></fa-icon>
+      <p
+        class="text-sm hover:text-blue-500 transition duration-150 hover:underline"
+      >
+        Work
+      </p>
+    </div>
+    <div class="flex items-center space-x-2 cursor-pointer">
+      <fa-icon
+        [icon]="faSmile"
+        class="fa-lg hover:text-blue-500 transition duration-150"
+      ></fa-icon>
+      <p
+        class="text-sm hover:text-blue-500 transition duration-150 hover:underline"
+      >
+        Contact
+      </p>
+    </div>
+  </div>
+  <div class="flex lg:hidden text-blue-500">
+    <fa-icon
+      [icon]="faCircle"
+      class="fa-xl hover:text-blue-500 transition duration-150 animate-pulse"
+    ></fa-icon>
+  </div>
+</nav>
